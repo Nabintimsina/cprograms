@@ -10,7 +10,7 @@ int Reverse(char txt1[]){
 	
 	for(len= 0; txt1[len] != '\0'; len++);
 	
-	for(i = 0; i < len; i++){
+	for(i = 0; i < len/2; i++){
 		
 		
 		if(txt1[i] != txt1[len-1-i])

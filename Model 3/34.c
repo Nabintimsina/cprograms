@@ -8,21 +8,27 @@
 #include<stdio.h>
 
 
+int pow(int x , int y ){
+	
+	if(y==1){
+		return x;
+	
+	}
+	else
+		return x*pow(x, y-1);
+}
+
 void main(){
 	
-	int x, y, i, pro =1;
+	int x, y, result;
 	
 	printf("Enter the value of x and y : ");
 	scanf("%d %d", &x , &y);
 	
 	
-	for(i = 1; i<=y; i++){
-		
-		pro = pro*x;
-		
-	}
+	result = pow(x, y);
 	
-	printf("Result is %d", pro);
+	printf("Result is %d", result);
 	
 	
 	
